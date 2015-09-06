@@ -79,8 +79,6 @@ Try Europe United Kingdom and London and Camden</b> <br>
     searchField2='streetName'
     collectField2='id'
    
-	appendName='Please choose'
-	appendValue=''
     noSelection="['': 'Please choose Borough']"
     setId="MyRoad22"
     value=''/>

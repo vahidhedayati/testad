@@ -47,7 +47,8 @@ Final standard Select box &lt;g:select shows up Vauxhall Road, last secondary ca
     domain='ajaxdependancyselectexample.MyContinent'
     searchField='continentName'
     collectField='id'
-   
+           appendName='Please choose'
+        appendValue=''
     domain2='ajaxdependancyselectexample.MyCountry'
     bindid="mycontinent.id"
     searchField2='countryName'
@@ -66,7 +67,8 @@ Final standard Select box &lt;g:select shows up Vauxhall Road, last secondary ca
 
 	filter2="L"
 
-    
+            appendName='Please choose'
+        appendValue=''
     noSelection="['': 'Please choose Continent']"
     setId="MyCity11"
     value=''/>
@@ -79,6 +81,8 @@ Final standard Select box &lt;g:select shows up Vauxhall Road, last secondary ca
     
     	filter2="C"
    	
+        appendName='Please choose'
+        appendValue=''
     domain2='ajaxdependancyselectexample.MyBorough'
      searchField2='actualName'
     collectField2='id'

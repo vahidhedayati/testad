@@ -118,7 +118,7 @@ log4j.main = {
 
 
 ads {
-    security = "enabled"
+    security = "disabled"
     whitelist = [
             [dc:'ajaxdependancyselectexample.MyContinent', collect:'id', search:'continentName'],
             [dc:'ajaxdependancyselectexample.MyCountry', collect:'id', search:'countryName'],

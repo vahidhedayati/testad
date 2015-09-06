@@ -11,6 +11,7 @@ import ajaxdependancyselectexample.MyShops
 import ajaxdependancyselectexample.Os
 import ajaxdependancyselectexample.Streets
 import ajaxdependancyselectexample.Users
+import ajaxdependancyselectexample.MyBorough
 import dms.nexusglobal.Subtag
 import dms.nexusglobal.Tag
 import dms.nexusglobal.Template
@@ -129,7 +130,6 @@ class BootStrap {
 		def gg4=cc2.addToMyborough(actualName:'Witney').save(flush:true)
 	
 	
-
 		def sc1 = MyShops.findOrSaveWhere(mycity: cc1, shopName:'Abc')
 		def sc2 = MyShops.findOrSaveWhere(mycity: cc1, shopName:'Cat')
 		def sc3 = MyShops.findOrSaveWhere(mycity: cc2, shopName:'Gigo')
@@ -146,17 +146,17 @@ class BootStrap {
 		def sc53 = MyShops.findOrSaveWhere(mycity: cc6, shopName:'Nice shopping day out in nice')
 		// Fill Streets where Boroughs and Streets have a map relationship
 		
-		Streets.findOrSaveWhere(localborough: gg1.myborough.toList()[0], streetName: 'Vauxhall Road')
-		Streets.findOrSaveWhere(localborough: gg1.myborough.toList()[0], streetName: 'Wandsworth Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(0), streetName: 'Vauxhall Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(0), streetName: 'Wandsworth Road')
 		
-		Streets.findOrSaveWhere(localborough: gg2.myborough.toList()[1], streetName: 'Fleet Road')
-		Streets.findOrSaveWhere(localborough: gg2.myborough.toList()[1], streetName: 'Abbey Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(1), streetName: 'Fleet Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(1), streetName: 'Abbey Road')
 		
-		Streets.findOrSaveWhere(localborough: gg3.myborough.toList()[0], streetName: 'Warwick Road')
-		Streets.findOrSaveWhere(localborough: gg3.myborough.toList()[0], streetName: 'Stratford Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(2), streetName: 'Warwick Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(2), streetName: 'Stratford Road')
 		
-		Streets.findOrSaveWhere(localborough: gg4.myborough.toList()[1], streetName: 'Langdale Road')
-		Streets.findOrSaveWhere(localborough: gg4.myborough.toList()[1], streetName: 'Curbridge Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(3), streetName: 'Langdale Road')
+		Streets.findOrSaveWhere(localborough: MyBorough.read(3), streetName: 'Curbridge Road')
 
 	
 		
