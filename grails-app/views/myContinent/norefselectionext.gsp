@@ -31,6 +31,8 @@ Try Europe United Kingdom and London and Camden</b> <br>
     searchField='continentName'
     collectField='id'
    
+	appendName='Please choose'
+	appendValue=''
     domain2='ajaxdependancyselectexample.MyCountry'
     bindid="mycontinent.id"
     searchField2='countryName'
@@ -45,6 +47,8 @@ Try Europe United Kingdom and London and Camden</b> <br>
     searchField2='cityName'
     collectField2='id'
 
+	appendName='Please choose'
+	appendValue=''
     noSelection="['': 'Please choose Continent']"
     setId="MyCity11"
     value=''/>
@@ -57,6 +61,8 @@ Try Europe United Kingdom and London and Camden</b> <br>
     
 
    	
+	appendName='Please choose'
+	appendValue=''
     domain2='ajaxdependancyselectexample.MyBorough'
      searchField2='actualName'
     collectField2='id'
@@ -73,6 +79,8 @@ Try Europe United Kingdom and London and Camden</b> <br>
     searchField2='streetName'
     collectField2='id'
    
+	appendName='Please choose'
+	appendValue=''
     noSelection="['': 'Please choose Borough']"
     setId="MyRoad22"
     value=''/>
